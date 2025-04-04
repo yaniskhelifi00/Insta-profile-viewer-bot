@@ -2,6 +2,10 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 import requests
 from bs4 import BeautifulSoup
+import os
+
+
+TOKEN = os.getenv("BOT_TOKEN")
 
 # Scraping function
 def get_instagram_stats(username):
